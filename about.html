@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+    <!-- meta charset -->
+    <meta charset="utf-8">
+    <!-- site title -->
+    <title>GCOE | College Website</title>
+    <!-- meta description -->
+    <meta name="description" content="">
+    <!-- mobile viwport meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- fevicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- ================================
+        CSS Files
+        ================================= -->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i|Open+Sans:400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="css/themefisher-fonts.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/dark.css">
+    <link id="color-changer" rel="stylesheet" href="css/colors/blue.css">
+    <link rel="stylesheet" href="css/tabs.css">
+
+    <style>
+        .main {
+            width: 100%;
+            min-height: 480px;
+            margin-bottom: 50px;
+            text-align: center;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .service {
+            background: #00131f;
+            padding: 30px;
+            border-radius: 30px;
+            position: absolute;
+            bottom: 0;
+            box-shadow: 0 0 20px -15px black;
+            z-index: 1;
+            transition: transform .7s;
+        }
+        
+        .service-logo {
+            width: 160px;
+            height: 160px;
+            border-radius: 100%;
+            border: 10px solid rgb(15, 15, 15);
+            background: white;
+            margin: -100px auto 0;
+        }
+        
+        .service-logo img {
+            width: 150px;
+            margin-top: 20px;
+            margin-left: -5px
+        }
+        /* .service h4 {
+            height: 35px;
+            width: 80%;
+            font-style: italic;
+            font-weight: bold;
+            background: #00131f;
+            color: white;
+            margin: 50px auto;
+            position: relative;
+        }
+        
+        .service h4::after {
+            content: '';
+            width: 40px;
+            height: 30px;
+            background: linear-gradient(to right, white, #5205f0);
+            position: absolute;
+            right: -5px;
+            top: -5px;
+            z-index: -1;
+        }
+        
+        .service h4::before {
+            content: '';
+            width: 40px;
+            height: 30px;
+            background: linear-gradient(to right, #5205f0, white);
+            position: absolute;
+            left: -5px;
+            bottom: -5px;
+            z-index: -1;
+        }
+         */
+        
+        .shadow1 {
+            height: 200px;
+            width: 80%;
+            background: #00131f;
+            position: absolute;
+            border-radius: 30px;
+            bottom: 0;
+            left: 10%;
+            z-index: -2;
+            box-shadow: 0 0 20px -15px black;
+            transition: transform .7s;
+        }
+        
+        .shadow2 {
+            height: 200px;
+            width: 64%;
+            background: #00131f;
+            position: absolute;
+            border-radius: 30px;
+            bottom: 0;
+            left: 18%;
+            z-index: -2;
+        }
+        
+        .main:hover .service {
+            transform: translateY(-50px);
+        }
+        
+        .main:hover .shadow1 {
+            transform: translateY(-25px);
+        }
+    </style>
+
+
+</head>
+
+<body class="dark">
+
+    <div class="preloader">
+        <div class="loading-mask"></div>
+        <div class="loading-mask"></div>
+        <div class="loading-mask"></div>
+        <div class="loading-mask"></div>
+        <div class="loading-mask"></div>
+    </div>
+
+    <div class="preview-wrapper">
+        <div class="switcher-head">
+            <span>Style Switcher</span>
+            <div class="switcher-trigger tf-tools"></div>
+        </div>
+
+        <div class="switcher-body">
+            <h4>Choose Color:</h4>
+            <ul class="color-options list-none">
+                <li class="c0" data-color="color-0" title="Default">Default</li>
+                <li class="c1" data-color="color-1" title="Red">Red</li>
+                <li class="c2" data-color="color-2" title="Green">Green</li>
+                <li class="c3" data-color="color-3" title="Blue">Blue</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <main class="site-wrapper">
+        <div class="pt-table">
+            <div class="pt-tablecell page-about relative">
+                <!-- .close -->
+                <a href="index.html" class="page-close"><i class="tf-ion-close"></i></a>
+                <!-- /.close -->
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+                            <div class="page-title text-center">
+                                <h2>About <span class="primary">US</span> <span class="title-bg">GRACE</span></h2>
+                                <p>We strive to indulge the spirit of learning through the state of art facilities to the students. The only aim of Grace College of Engineering is to ensure that the students who pass out of the college, should turn out to
+                                    be academically brilliant, morally upright and empowered individuals of the society.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="main">
+                                <div class="service">
+                                    <div class="service-logo">
+                                        <img src="img/vision.png" alt="">
+                                    </div>
+                                    <!-- <h4>Vision</h4> -->
+                                    <p>Developing technocrats with excellent conceptual understanding and skills for innovative solutions to societal needs.</p>
+                                </div>
+                                <div class="shadow1"></div>
+                                <div class="shadow2"></div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="main">
+                                <div class="service">
+                                    <div class="service-logo">
+                                        <img src="img/mission.png" alt="">
+                                    </div>
+                                    <!-- <h4>Mission</h4> -->
+                                    <p>To impart conceptual understanding through excellent education and practical exposure. To provide platform for stimulating ideas through technical interactions and industrial exposures. To cultivate managerial and soft
+                                        skills through leadership development workshops for entrepreneurship development. To inculcate ethical values and practices to exhibit genuine concern to serve society.</p>
+                                </div>
+                                <div class="shadow1"></div>
+                                <div class="shadow2"></div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="main">
+                                <div class="service">
+                                    <div class="service-logo">
+                                        <img src="img/motto.png" alt="">
+                                    </div>
+                                    <!-- <h4>Motto</h4> -->
+                                    <p>Excellence and Genuineness for Innovation.</p>
+                                </div>
+                                <div class="shadow1"></div>
+                                <div class="shadow2"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+                    <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+                        <div class="page-title text-center">
+                            <h2>Governing <span class="primary">Body</span> <span class="title-bg">GRACE</span></h2>
+                            <p>The sprawling campus of Grace College of Engineering provides all-round education without compromising discipline, dedication and commitment.</p>
+                            <p>We strive to indulge the spirit of learning through the state of art facilities to the students. The only aim of Grace College of Engineering is to ensure that the students who pass out of the college, should turn out to be
+                                academically brilliant, morally upright and empowered individuals of the society.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+                        <div class="page-title text-center">
+                            <h2>Our <span class="primary">Message</span> <span class="title-bg">GRACE</span></h2>
+
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+                        <ul class="tabs">
+                            <li data-tab-target="#chairman" class="active tab">Chairman's Message</li>
+                            <li data-tab-target="#vice_chairman" class="tab">Vice Chairman's Message</li>
+                            <li data-tab-target="#secretary" class="tab">Secretary's Message</li>
+                            <li data-tab-target="#principal" class="tab">Principal's Message</li>
+                        </ul>
+                        <div class="tab-content">
+                            <div id="chairman" data-tab-content class="active">
+                                <h1>Chairman's Voice</h1>
+                                <p>In the pursuit of knowledge through education, there are lot of vital forces that drives the same education. Those forces, at times, stand as a barrier for the people who earnestly deserve it. With a vision to provide technical
+                                    education, to those who deserve it but being denied on meanless grounds, arises GRACE COLLEGE OF ENGINEERING. Its’ through divine Grace we stand .</p>
+                                <p>The personality of an individual is not only determined by his physique but also by his wholistic development. One of our objectives is not only providing knowledge from text books but also imparting various skills-including
+                                    technical, material, language, social, to one who step into GCOE as a student. The best combination in education is skilled and trained teachers working with students in the pursuit of their learning process. This force
+                                    us to place qualified scholars to qualify our students for the world filled with competitions and challenges.</p>
+                                <p>As Martin Luther king Jr stated : Intelligence plus character, that’s the true goal of education, we value every individuals’ character and career and we strive to enlighten them. It is our foreseen vision that as days-go-by
+                                    when anyone thinks of engineering education, their mind should first flash as GCOE.</p>
+                            </div>
+                            <div id="vice_chairman" data-tab-content>
+                                <h1></h1>
+                                <p></p>
+                            </div>
+                            <div id="secretary" data-tab-content>
+                                <h1>Flow from the pen of Secretary:-</h1>
+                                <p>Grace College of Engineering as its name speaks stands on the foundation of divine grace. An individual has miles to go ; if they stop at the milestone of GCOE, the rest of the journey becomes tireless. Knowledge blended
+                                    with high ethical values are being imbibed into young minds by the well-equipped faculty members. GCOE is a training field as it is loaded with lot of equipments where a student can train to do what they learn in text.
+                                    GCOE can accommodate students who are faraway from their study environment and provides an in-home atmosphere during their stay at GCOE hostel. We motivate all to fly into sky by supporting them in inculcating various
+                                    skills of interest. We guide them to the doors of opportunities before them through campus placements.</p>
+                            </div>
+                            <div id="principal" data-tab-content>
+                                <h1></h1>
+                                <p></p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /.container -->
+
+
+
+                    <nav class="page-nav clear">
+                        <div class="container">
+                            <div class="flex flex-middle space-between">
+                                <span class="prev-page"><a href="index.html" class="link">&larr;Home</a></span>
+                                <span class="next-page"><a href="services.html" class="link">Admissions &rarr;</a></span>
+                            </div>
+                        </div>
+                        <!-- /.page-nav -->
+                    </nav>
+
+                    <!-- /.container -->
+                </div>
+                <!-- /.pt-tablecell -->
+            </div>
+            <!-- /.pt-table -->
+    </main>
+    <!-- /.site-wrapper -->
+
+    <!-- ================================
+        JavaScript Libraries
+        ================================= -->
+
+    <script src="js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery-validation.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/tabs.js"></script>
+</body>
+
+</html>
